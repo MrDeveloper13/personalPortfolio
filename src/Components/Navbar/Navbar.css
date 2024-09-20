@@ -1,0 +1,134 @@
+/* General Styles */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  font-family: sans-serif;
+  background-color: #161512; /* Background color to make it stand out */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  position: sticky; /* Make navbar sticky */
+  top: 0; /* Stick to the top */
+  z-index: 1000; /* Ensure it stays above other content */
+
+}
+
+.logo-container {
+  display: flex;
+  justify-content: left;
+  padding-left: 50px;
+  width: 100%;
+}
+
+.logo {
+  width: 80px;
+}
+
+/* Navigation for Larger Screens (Horizontal Menu) */
+.nav-menu {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  justify-content: center;
+  flex-grow: 1;
+  padding-right: 50px;
+  
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s;
+  
+}
+
+.nav-link:hover {
+  background: linear-gradient(267deg, #df8908 10%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Mobile Menu Toggle Icon (Menu Icon Visible Only on Small Screens) */
+.mobile-menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  width: 30px;
+  cursor: pointer;
+}
+
+/* Sidebar for Mobile Screens */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  bottom: 0;
+  width: 70%;
+  background-color: #161512;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  
+}
+
+.sidebar-visible {
+  right: 0;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  
+}
+
+.sidebar-link {
+  padding: 10px 0;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid #ccc;
+  transition: color 0.3s;
+  
+}
+
+.sidebar-link:hover {
+  background: linear-gradient(267deg, #df8908 10%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+.sidebar-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  cursor: pointer;
+  
+}
+
+.close-icon {
+  width: 25px;
+  
+}
+
+/* Responsive Styling for Small Screens */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+    padding-right: 10px;
+
+  }
+
+  .logo-container {
+    width: 100%;
+  }
+}

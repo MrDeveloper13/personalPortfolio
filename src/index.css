@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: #161512;
+    color: white;
+}
+html {
+  scroll-behavior: smooth;
+}
